@@ -1,0 +1,291 @@
+@import "syntax-variables";
+
+.editor-colors {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+.editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @syntax-text-color;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+.comment {
+  color: darken(@sea, 15%);
+}
+
+.entity {
+  &.name.type {
+    color: @sea;
+    text-decoration: underline;
+  }
+
+  &.other.inherited-class {
+    color: @sea;
+  }
+}
+
+.keyword {
+  color: @silver;
+
+  &.control {
+    color: @sea;
+  }
+
+  &.operator {
+    color: @sea;
+  }
+
+  &.other.special-method {
+    color: @sea;
+  }
+
+  &.other.unit {
+    color: @sea;
+  }
+}
+
+.storage {
+  color: @silver;
+}
+
+.constant {
+  color: @turquoise;
+
+  &.character.escape {
+    color: @turquoise;
+  }
+
+  &.numeric {
+    color: @turquoise;
+  }
+
+  &.other.color {
+    color: @turquoise;
+  }
+
+  &.other.symbol {
+    color: @turquoise;
+  }
+}
+
+.variable {
+  color: @turquoise;
+
+  &.interpolation {
+    color: darken(@turquoise, 10%);
+  }
+
+  &.parameter.function {
+    color: @turquoise;
+  }
+}
+
+.invalid.illegal {
+  background-color: @turquoise;
+  color: @syntax-background-color;
+}
+
+.string {
+  color: @sea;
+}
+
+.punctuation {
+  &.definition {
+    &.comment {
+      color: @syntax-text-color;
+    }
+
+    &.string,
+    &.variable,
+    &.parameters,
+    &.array {
+      color: @syntax-text-color;
+    }
+
+    &.heading,
+    &.identity {
+      color: @syntax-text-color;
+    }
+
+    &.bold {
+      color: @syntax-text-color;
+      font-style: bold;
+    }
+
+    &.italic {
+      color: @syntax-text-color;
+      font-style: italic;
+    }
+  }
+
+  &.section.embedded {
+    color: darken(@syntax-text-color, 10%);
+  }
+
+}
+
+.support {
+  &.class {
+    color: @sea;
+  }
+
+  &.function  {
+    color: @silver;
+
+    &.any-method {
+      color: @silver;
+    }
+  }
+}
+
+.entity {
+  &.name.function {
+    color: @silver;
+  }
+
+  &.name.class, &.name.type.class {
+    color: @sea;
+  }
+
+  &.name.section {
+    color: @sea;
+  }
+
+  &.name.tag {
+    color: @sea;
+    text-decoration: underline;
+  }
+
+  &.other.attribute-name {
+    color: @sea;
+
+    &.id {
+      color: @sea;
+    }
+  }
+}
+
+.meta {
+  &.class {
+    color: @silver;
+  }
+
+  &.link {
+    color: @silver;
+  }
+
+  &.require {
+    color: @silver;
+  }
+
+  &.selector {
+    color: @silver;
+  }
+
+  &.separator {
+    background-color: @silver;
+    color: @syntax-text-color;
+  }
+}
+
+.none {
+  color: @syntax-text-color;
+}
+
+.markup {
+  &.bold {
+    color: @syntax-text-color;
+    font-weight: bold;
+  }
+
+  &.changed {
+    color: @syntax-text-color;
+  }
+
+  &.deleted {
+    color: @syntax-text-color;
+  }
+
+  &.italic {
+    color: @syntax-text-color;
+    font-style: italic;
+  }
+
+  &.heading .punctuation.definition.heading {
+    color: @syntax-text-color;
+  }
+
+  &.inserted {
+    color: @syntax-text-color;
+  }
+
+  &.list {
+    color: @syntax-text-color;
+  }
+
+  &.quote {
+    color: @syntax-text-color;
+  }
+
+  &.raw.inline {
+    color: @syntax-text-color;
+  }
+}
+
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+  &.heading {
+    color: @syntax-text-color;
+  }
+}
+
+.editor.mini .scroll-view {
+  padding-left: 1px;
+}

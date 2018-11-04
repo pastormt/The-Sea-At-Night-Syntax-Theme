@@ -1,0 +1,15 @@
+{
+  "name": "The Sea At Night",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "The name says it all",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/pastormt/the-sea-at-night-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
