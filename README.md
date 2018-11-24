@@ -1,5 +1,9 @@
 # The Sea At Night Syntax Theme
 
-The name says it all
+An aquatic syntax theme for Atom.
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+Mostly full of all the different blues that can only be found in the sea at night.
+
+Silver, here and there, like the moon, in the distance.
+
+"Find" dialogue box brings up a delicate orange, that one might find from lighthouse. 
